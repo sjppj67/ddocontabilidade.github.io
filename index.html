@@ -1,31 +1,119 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DDO Contabilidade</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon-ddoblog.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #f0f0f0;
+    }
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 255, 0, 0.1);
+    }
+    header img {
+      max-height: 60px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: #1b1b1b;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #14e95633;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #111, #222);
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      color: #1de9b6;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00000066;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #1de9b6;
+      margin-top: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0a0a0a;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-  
-<nav class="navbar">
-  <div class="container">
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="blog.html">Blog DDO</a></li>
-      <li><a href="artigos.html">Artigos Científicos</a></li>
-      <li><a href="https://seudominio.com/forum" target="_blank">Fórum Contábil</a></li>
-      <li><a href="quemsomos.html">Quem Somos</a></li>
-      <li><a href="contato.html">Contato</a></li>
-      <li><a href="alunos.html" style="background-color:#1e5631; color:white;">Área de Membros</a></li>
-    </ul>
-  </div>
-</nav>
-
-  <main>
-    <section>
-      <h1>Bem-vindo à DDO</h1>
-      <p>Aqui você encontra cursos, publicações e conhecimento contábil com ousadia e alegria!</p>
-    </section>
-  </main>
+  <header>
+    <img src="ddocontabilidade.png" alt="DDO Contabilidade" />
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog DDO</a>
+    <a href="artigos.html">Artigos Científicos</a>
+    <a href="https://forum.ddocontabilidade.com.br" target="_blank">Fórum Contábil</a>
+    <a href="quemsomos.html">Quem Somos</a>
+    <a href="contato.html">Contato</a>
+    <a href="alunos.html">Área de Membros</a>
+  </nav>
+  <section class="hero">
+    <h1>Bem-vindo à DDO Contabilidade</h1>
+    <p>Cursos, publicações e conhecimento contábil com ousadia e alegria!</p>
+  </section>
+  <section class="cards">
+    <div class="card">
+      <h3>Curso de IRPF 2025</h3>
+      <p>Aprenda a declarar imposto de renda de forma prática e segura.</p>
+    </div>
+    <div class="card">
+      <h3>Contabilidade Gerencial</h3>
+      <p>Domine análise de custos, precificação e tomada de decisões.</p>
+    </div>
+    <div class="card">
+      <h3>Tributação do Simples Nacional</h3>
+      <p>Atualizado com as normas de 2025 para MEIs e pequenas empresas.</p>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 DDO Contabilidade • Desenvolvido com dedicação por Prof. Sidney</p>
+  </footer>
 </body>
 </html>
